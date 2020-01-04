@@ -1,0 +1,65 @@
+//main: ../style.less
+.nav__menu {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  background-color: @white;
+}
+.nav__brand {
+  margin-top: -4rem;
+  width: 15%;
+  img {
+    display: block;
+    width: 110px;
+    height: auto;
+  }
+}
+.nav__list {
+  width: 75%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav__item {
+  margin-left: 2rem;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.nav__link {
+  text-decoration: none;
+  color: @gray-l;
+  font-family: @releway;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: color 0.4s linear;
+  &--active {
+    color: @red;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: @red;
+    margin-top: 0.1rem;
+    transition: width 0.4s linear;
+  }
+  &:hover {
+    color: @red;
+    cursor: pointer;
+    text-shadow: 5px -20px 2px @red;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+.nav__button {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
