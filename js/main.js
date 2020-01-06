@@ -21,4 +21,7 @@ $(function(){
         dots: true,
         autoplay: true
       });
+      /*waves evect*/
+      Waves.attach(".wavesEfect");
+      Waves.init();
 });
