@@ -55,4 +55,22 @@ $(function() {
       });
     });
   });
+  /*fixed header*/
+  /*fixed header*/
+  var introH = $("#intro").innerHeight();
+  var header = $(".nav__menu");
+  var scrollOfset = $(window).scrollTop();
+  checkScroll(scrollOfset);
+  $(window).on("scroll", function() {
+    scrollOfset = $(this).scrollTop();
+    checkScroll(scrollOfset);
+  });
+  function checkScroll(scrollOfset) {
+    scrollOfset = $(this).scrollTop();
+    if (scrollOfset >= introH) {
+      header.addClass("fixed__header");
+    } else {
+      header.removeClass("fixed__header");
+    }
+  }
 });

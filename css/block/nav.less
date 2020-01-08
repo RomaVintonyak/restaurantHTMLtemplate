@@ -6,6 +6,16 @@
   justify-content: center;
   background-color: @white;
   padding: 0 3rem;
+  &.fixed__header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #abbaab;
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    background: linear-gradient(to right, #ffffff, #abbaab);
+    z-index: 4;
+  }
 }
 .nav__brand {
   margin-top: -4rem;
