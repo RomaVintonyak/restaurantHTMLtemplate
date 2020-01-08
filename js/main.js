@@ -39,10 +39,20 @@ $(function() {
       .find("#featuresSlider");
     currentSlider.slick("slickPrev");
   });
-  $(".features__btn__right").on("click", function(){
+  $(".features__btn__right").on("click", function() {
     var currentSlider = $(this)
-    .parent(".features__block")
-    .find("#featuresSlider");
+      .parent(".features__block")
+      .find("#featuresSlider");
     currentSlider.slick("slickNext");
+  });
+  /*progress bar to scroll page*/
+  $(function() {
+    $(window).on("scroll resize", function() {
+      var prog =
+        $(window).scrollTop() / ($(document).height() - $(window).height());
+      $(".progress__bar").css({
+        width: ((100 * prog) | 0) + "%"
+      });
+    });
   });
 });
