@@ -33,4 +33,16 @@ $(function() {
     autoplaySpeed: 2000,
     arrows: false
   });
+  $(".features__btn__left").on("click", function() {
+    var currentSlider = $(this)
+      .parents(".features__block")
+      .find("#featuresSlider");
+    currentSlider.slick("slickPrev");
+  });
+  $(".features__btn__right").on("click", function(){
+    var currentSlider = $(this)
+    .parent(".features__block")
+    .find("#featuresSlider");
+    currentSlider.slick("slickNext");
+  });
 });
