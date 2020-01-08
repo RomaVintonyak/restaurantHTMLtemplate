@@ -56,7 +56,6 @@ $(function() {
     });
   });
   /*fixed header*/
-  /*fixed header*/
   var introH = $("#intro").innerHeight();
   var header = $(".nav__menu");
   var scrollOfset = $(window).scrollTop();
