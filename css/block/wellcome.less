@@ -66,14 +66,9 @@
   height: 510px;
   background-color: @red;
   position: relative;
-  z-index: 3;
-  &::after {
-    content: url(../../img/about/lyst_form.png);
-    position: absolute;
-    z-index: 1;
-    right: 10%;
-    bottom: -40%;
-  }
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 .right__header {
   display: flex;
@@ -127,4 +122,10 @@
   &:focus {
     outline: none;
   }
+}
+.right__img{
+  position: absolute;
+  bottom: -13rem;
+  left: 0rem;
+  z-index: 2;
 }
