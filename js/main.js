@@ -77,6 +77,9 @@ $(function() {
   acardeonBtn.on("click", function(event) {
     event.preventDefault();
     $(this).toggleClass("acardeon__item__header--active");
-    $("#acardeonTxt1").toggleClass("acardeon__text--active");
+    $(this)
+      .parent(".acardeon__item")
+      .find(".acardeon__text")
+      .toggleClass("acardeon__text--active");
   });
 });
