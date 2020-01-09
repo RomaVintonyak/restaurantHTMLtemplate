@@ -1,0 +1,23 @@
+//main: ../style.less
+.menu__links {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link__itmem {
+  text-decoration: none;
+  color: @gray;
+  margin-right: 4rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  font-size: 1.3rem;
+  font-family: @releway;
+  font-weight: 700;
+  transition: color 0.2s linear;
+  &:hover {
+    color: @red;
+  }
+}
