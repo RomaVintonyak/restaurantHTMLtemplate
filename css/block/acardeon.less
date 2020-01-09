@@ -1,0 +1,63 @@
+//main: ../style.less
+.acardeon__item {
+  margin-top: 1rem;
+}
+.acardeon__item__header {
+  display: flex;
+  align-items: center;
+  b {
+    font-size: 1.1rem;
+    font-family: @releway;
+    color: @gray;
+    line-height: 1.75;
+    margin-right: 0.5rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+    font-family: @releway;
+    color: @gray;
+    line-height: 1.75;
+    margin-right: 3rem;
+  }
+  span {
+    width: 1rem;
+    height: 1rem;
+    border-right: 2px solid @gray;
+    border-bottom: 2px solid @gray;
+    transform: rotate(45deg);
+  }
+  &--active {
+    b {
+      color: @blue;
+      transition: all 0.4s linear;
+    }
+    h5 {
+      color: @blue;
+      transition: all 0.4s linear;
+    }
+    span {
+      border-right-color: @blue;
+      border-bottom-color: @blue;
+      transform: rotate(-135deg);
+      transition: all 0.4s linear;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.acardeon__text {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  display: none;
+  &--active {
+    display: block;
+    transition: all 0.4s linear;
+  }
+  p {
+    font-size: 1rem;
+    font-family: @releway;
+    color: @gray-l;
+    line-height: 2;
+  }
+}

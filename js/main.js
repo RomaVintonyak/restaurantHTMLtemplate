@@ -72,4 +72,11 @@ $(function() {
       header.removeClass("fixed__header");
     }
   }
+  /*acardeon script*/
+  var acardeonBtn = $('[data-acardeon="show-text"]');
+  acardeonBtn.on("click", function(event) {
+    event.preventDefault();
+    $(this).toggleClass("acardeon__item__header--active");
+    $("#acardeonTxt1").toggleClass("acardeon__text--active");
+  });
 });
