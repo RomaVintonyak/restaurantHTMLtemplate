@@ -112,4 +112,10 @@ $(function() {
       });
     }
   });
+  /*menu button*/
+  var btnMenu = $("#toggleMenu");
+  btnMenu.on("click", function(event) {
+    event.preventDefault();
+    $(".menu__colum__content").removeClass("hide");
+  });
 });

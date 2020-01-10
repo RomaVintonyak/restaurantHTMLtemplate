@@ -1,0 +1,60 @@
+//main: ../style.less
+.stuff__content {
+  margin-top: 3rem;
+  width: 100%;
+  position: relative;
+}
+.stuff__slider {
+  display: flex;
+}
+.slider__card {
+  width: 30%;
+  margin: 0 1.5rem;
+  border: 1px solid rgba(@gray-l, 0.4);
+  box-shadow: 0px 0px 10px rgba(@gray-l, 0.4);
+  h3 {
+    font-size: 1.7rem;
+    font-family: @lobster;
+    color: @blue;
+    margin-top: 2rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+    font-family: @lobster;
+    color: @gray-l;
+    margin-top: 0.6rem;
+  }
+}
+.slider__card__social {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  p {
+    font-size: 1.1rem;
+    font-family: @lobster;
+    color: @gray-l;
+    margin-right: 0.7rem;
+  }
+  a {
+    text-decoration: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: @gray-l;
+    border-radius: 5px;
+    margin-right: 0.8rem;
+    transition: box-shadow 0.3s linear, transform 0.3s linear;
+    &:last-child {
+      margin-right: 0;
+    }
+    i {
+      color: @white;
+    }
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px @gray-l;
+    }
+  }
+}
