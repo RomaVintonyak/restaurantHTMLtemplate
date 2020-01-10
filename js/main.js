@@ -118,4 +118,13 @@ $(function() {
     event.preventDefault();
     $(".menu__colum__content").removeClass("hide");
   });
+  /*visible class to card stuff*/
+  var cardHover = $(".slider__card__img");
+  cardHover.hover(function(event) {
+    event.preventDefault();
+    $(this)
+      .parent(".slider__card")
+      .find(".card__img__btn")
+      .toggleClass("card__img__btn--visible");
+  });
 });
