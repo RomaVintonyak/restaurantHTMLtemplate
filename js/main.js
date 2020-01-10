@@ -82,4 +82,34 @@ $(function() {
       .find(".acardeon__text")
       .toggleClass("acardeon__text--active");
   });
+  /*filter category*/
+  var filter = $("[data-filter]");
+  filter.on("click", function(event) {
+    event.preventDefault();
+    /*add clas active for links*/
+    $("[data-filter]")
+      .click(function(event) {
+        event.preventDefault();
+        $("[data-filter]")
+          .removeClass("link__itmem--active")
+          .eq($(this).index())
+          .addClass("link__itmem--active");
+      })
+      .eq($(this))
+      .addClass("link__itmem--active");
+    /*filter menu block*/
+    var cat = $(this).data("filter");
+    if (cat == "all") {
+      $("[data-cat]").removeClass("hide");
+    } else {
+      $("[data-cat]").each(function() {
+        var workCat = $(this).data("cat");
+        if (workCat != cat) {
+          $(this).addClass("hide");
+        } else {
+          $(this).removeClass("hide");
+        }
+      });
+    }
+  });
 });
