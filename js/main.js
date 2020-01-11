@@ -117,6 +117,7 @@ $(function() {
   btnMenu.on("click", function(event) {
     event.preventDefault();
     $(".menu__colum__content").removeClass("hide");
+    $(".link__itmem").removeClass("link__itmem--active");
   });
   /*visible class to card stuff*/
   var cardHover = $(".slider__card__img");
