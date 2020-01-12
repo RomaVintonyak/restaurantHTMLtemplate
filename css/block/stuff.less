@@ -3,6 +3,59 @@
   margin-top: 3rem;
   width: 100%;
   position: relative;
+  z-index: 2;
+}
+.stuff__btn__left{
+  position: absolute;
+  z-index: 3;
+  top: 45%;
+  left: 0%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, #14bcdd, #4cffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.1s linear, box-shadow 0.1s linear;
+  i {
+    color: @white;
+    font-size: 1.5rem;
+  }
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #14bcdd, #4cffff);
+    box-shadow: 0px 0px 30px #4cffff;
+    &:active {
+      background: linear-gradient(to top, #14bcdd, #4cffff);
+    }
+  }
+}
+.stuff__btn__right{
+  position: absolute;
+  z-index: 3;
+  top: 45%;
+  right: 0%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, #14bcdd, #4cffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.1s linear, box-shadow 0.1s linear;
+  i {
+    color: @white;
+    font-size: 1.5rem;
+  }
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #14bcdd, #4cffff);
+    box-shadow: 0px 0px 30px #4cffff;
+    &:active {
+      background: linear-gradient(to bottom, #14bcdd, #4cffff);
+    }
+  }
 }
 .stuff__slider {
   display: flex;
