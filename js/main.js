@@ -150,8 +150,14 @@ jQuery(document).ready(function() {
     currentSlider.slick("slickNext");
   });
   /*reset tags a standard behavior*/
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   var aHref = $("a");
   aHref.click(function(event) {
     event.preventDefault();
   });//!!!!!!!!!!!remove this script to active all links!!!!!!!!!!
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 });

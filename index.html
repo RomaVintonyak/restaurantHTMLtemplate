@@ -851,11 +851,11 @@
     <section id="feedback">
       <div class="feedback">
         <!--section title-->
-        <div class="header__titles">
+        <div class="header__titles mt-5">
           <div class="container">
             <div class="header__titles__content text__center">
-              <h3>We Have Awsome Team</h3>
-              <h2>Our Stuff</h2>
+              <h3>What Say Customer About Us</h3>
+              <h2>Customer Feedback</h2>
               <img src="img/header/header__line.png" alt="line" class="img" />
             </div>
           </div>
@@ -869,7 +869,21 @@
             <div class="feedback__btn__right">
               <i class="fas fa-arrow-right"></i>
             </div>
-            <div class="feedback__slider__content" id="feedbackSlider"></div>
+            <div class="feedback__slider__content" id="feedbackSlider">
+              <div class="slider__content">
+                <div class="colum__photo__feedback">
+                  <img src="img/feedback__slider/item1.png" alt="reviews__photo" class="img"/>
+                  <div class="line__after__photo">
+                    <i class="fas fa-sliders-h"></i>
+                  </div>
+                </div>
+                <div class="collum__text__feedback">
+                  <div class="top__text"></div>
+                  <div class="center__text"></div>
+                  <div class="bottom__text"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </dic>
       </div>
@@ -880,6 +894,18 @@
     <script type="text/javascript" src="js/vendor/slick.min.js"></script>
     <!--waves efect http://fian.my.id/Waves/#start-->
     <script type="text/javascript" src="js/vendor/waves.min.js"></script>
+    <!--wow ls animation-->
+    <script type="text/javascript" src="js/vendor/wow.min.js"></script>
+    <script type="text/javascript">
+      wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animated",
+        offset: 0,
+        mobile: false,
+        live: true
+      });
+      new WOW().init();
+    </script>
     <!--custom scripts-->
     <script type="text/javascript" src="js/main.js"></script>
   </body>
