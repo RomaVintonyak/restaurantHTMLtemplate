@@ -156,8 +156,29 @@ jQuery(document).ready(function() {
   var aHref = $("a");
   aHref.click(function(event) {
     event.preventDefault();
-  });//!!!!!!!!!!!remove this script to active all links!!!!!!!!!!
+  }); //!!!!!!!!!!!remove this script to active all links!!!!!!!!!!
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /*slider to section feedback*/
+  const feedbackSlider = $("#feedbackSlider");
+  feedbackSlider.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false
+  });
+  $(".feedback__btn__left").on("click", function() {
+    var feedbackCurent = $(this)
+      .parent(".feedback__slider")
+      .find("#feedbackSlider");
+    feedbackCurent.slick("slickPrev");
+  });
+  $(".feedback__btn__right").on("click", function() {
+    var feedbackCurent = $(this)
+      .parent(".feedback__slider")
+      .find("#feedbackSlider");
+      feedbackCurent.slick("slickNext");
+  });
 });
