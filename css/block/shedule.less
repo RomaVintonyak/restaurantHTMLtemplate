@@ -20,9 +20,15 @@
 }
 .shedule__content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .shedule__card {
   width: 33%;
@@ -31,19 +37,30 @@
   z-index: 1;
   background-color: @white;
   padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-box-shadow 0.4s linear, -webkit-transform 0.4s linear;
+  transition: -webkit-box-shadow 0.4s linear, -webkit-transform 0.4s linear;
   transition: box-shadow 0.4s linear, transform 0.4s linear;
+  transition: box-shadow 0.4s linear, transform 0.4s linear, -webkit-box-shadow 0.4s linear, -webkit-transform 0.4s linear;
   margin-left: 2rem;
   &:first-child {
     margin-left: 0;
   }
   &:hover {
     cursor: pointer;
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 30px @white;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-box-shadow: 0px 0px 30px @white;
+            box-shadow: 0px 0px 30px @white;
   }
 }
 .shedule__card--header {
@@ -53,10 +70,17 @@
   width: 6rem;
   height: 6rem;
   background-color: @white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 30px @gray-l;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 30px @gray-l;
+          box-shadow: 0px 0px 30px @gray-l;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -66,6 +90,7 @@
   color: @red;
   line-height: 1.75;
   margin-bottom: 0.5rem;
+ 
 }
 .shedule__card--text {
   font-size: 1rem;

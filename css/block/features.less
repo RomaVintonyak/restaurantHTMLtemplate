@@ -14,20 +14,33 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#14bcdd), to(#4cffff));
   background: linear-gradient(to right, #14bcdd, #4cffff);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
+  transition: background 0.1s linear, box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
   }
   &:hover {
     cursor: pointer;
+    background: -webkit-gradient(linear, right top, left top, from(#14bcdd), to(#4cffff));
     background: linear-gradient(to left, #14bcdd, #4cffff);
-    box-shadow: 0px 0px 30px #4cffff;
+    -webkit-box-shadow: 0px 0px 30px #4cffff;
+            box-shadow: 0px 0px 30px #4cffff;
     &:active {
+      background: -webkit-gradient(linear, left bottom, left top, from(#14bcdd), to(#4cffff));
       background: linear-gradient(to top, #14bcdd, #4cffff);
     }
   }
@@ -40,20 +53,33 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#14bcdd), to(#4cffff));
   background: linear-gradient(to right, #14bcdd, #4cffff);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
+  transition: background 0.1s linear, box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
   }
   &:hover {
     cursor: pointer;
+    background: -webkit-gradient(linear, right top, left top, from(#14bcdd), to(#4cffff));
     background: linear-gradient(to left, #14bcdd, #4cffff);
-    box-shadow: 0px 0px 30px #4cffff;
+    -webkit-box-shadow: 0px 0px 30px #4cffff;
+            box-shadow: 0px 0px 30px #4cffff;
     &:active {
+      background: -webkit-gradient(linear, left top, left bottom, from(#14bcdd), to(#4cffff));
       background: linear-gradient(to bottom, #14bcdd, #4cffff);
     }
   }

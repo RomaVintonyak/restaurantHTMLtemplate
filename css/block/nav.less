@@ -1,9 +1,15 @@
 //main: ../style.less
 .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 5rem;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: @white;
   padding: 0 3rem;
   &.fixed__header {
@@ -13,6 +19,7 @@
     left: 0;
     z-index: 10;
     background: #abbaab;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#abbaab));
     background: linear-gradient(to right, #ffffff, #abbaab);
     background: linear-gradient(to right, #ffffff, #abbaab);
   }
@@ -30,9 +37,15 @@
   width: 75%;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-right: 1.5rem;
 }
 .nav__item {
@@ -48,6 +61,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.1rem;
+  -webkit-transition: color 0.4s linear;
   transition: color 0.4s linear;
   &--active {
     color: @red;
@@ -59,6 +73,7 @@
     height: 3px;
     background-color: @red;
     margin-top: 0.1rem;
+    -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
   }
   &:hover {
@@ -72,7 +87,13 @@
 }
 .nav__button {
   width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

@@ -13,20 +13,33 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#14bcdd), to(#4cffff));
   background: linear-gradient(to right, #14bcdd, #4cffff);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
+  transition: background 0.1s linear, box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
   }
   &:hover {
     cursor: pointer;
+    background: -webkit-gradient(linear, right top, left top, from(#14bcdd), to(#4cffff));
     background: linear-gradient(to left, #14bcdd, #4cffff);
-    box-shadow: 0px 0px 30px #4cffff;
+    -webkit-box-shadow: 0px 0px 30px #4cffff;
+            box-shadow: 0px 0px 30px #4cffff;
     &:active {
+      background: -webkit-gradient(linear, left bottom, left top, from(#14bcdd), to(#4cffff));
       background: linear-gradient(to top, #14bcdd, #4cffff);
     }
   }
@@ -39,20 +52,33 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#14bcdd), to(#4cffff));
   background: linear-gradient(to right, #14bcdd, #4cffff);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
+  transition: background 0.1s linear, box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
   }
   &:hover {
     cursor: pointer;
+    background: -webkit-gradient(linear, right top, left top, from(#14bcdd), to(#4cffff));
     background: linear-gradient(to left, #14bcdd, #4cffff);
-    box-shadow: 0px 0px 30px #4cffff;
+    -webkit-box-shadow: 0px 0px 30px #4cffff;
+            box-shadow: 0px 0px 30px #4cffff;
     &:active {
+      background: -webkit-gradient(linear, left top, left bottom, from(#14bcdd), to(#4cffff));
       background: linear-gradient(to bottom, #14bcdd, #4cffff);
     }
   }
@@ -62,6 +88,7 @@
   top: -10%;
   left: -3%;
   z-index: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#08c8ee), to(#00ffff));
   background: linear-gradient(to left, #08c8ee, #00ffff);
   width: 10rem;
   height: 10rem;
@@ -72,19 +99,23 @@
   bottom: -5%;
   right: -2%;
   z-index: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#08c8ee), to(#00ffff));
   background: linear-gradient(to left, #08c8ee, #00ffff);
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
 }
 .stuff__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .slider__card {
   width: 30%;
   margin: 0 1.5rem;
   border: 1px solid rgba(@gray-l, 0.4);
-  box-shadow: 0px 0px 10px rgba(@gray-l, 0.4);
+  -webkit-box-shadow: 0px 0px 10px rgba(@gray-l, 0.4);
+          box-shadow: 0px 0px 10px rgba(@gray-l, 0.4);
   background-color: @white;
   h3 {
     font-size: 1.7rem;
@@ -113,9 +144,16 @@
   z-index: 2;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(#14bcdd, 0.6)), to(rgba(#4cffff, 0.6)));
   background: linear-gradient(to left, rgba(#14bcdd, 0.6), rgba(#4cffff, 0.6));
   visibility: hidden;
   a {
@@ -124,9 +162,15 @@
     height: 3.3rem;
     margin-right: 1rem;
     background: @white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 50%;
     &:last-child {
       margin-right: 0;
@@ -142,10 +186,16 @@
 }
 
 .slider__card__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
   p {
@@ -161,7 +211,10 @@
     background-color: @gray-l;
     border-radius: 5px;
     margin-right: 0.8rem;
+    -webkit-transition: -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+    transition: -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
     transition: box-shadow 0.3s linear, transform 0.3s linear;
+    transition: box-shadow 0.3s linear, transform 0.3s linear, -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
     &:last-child {
       margin-right: 0;
     }
@@ -169,8 +222,10 @@
       color: @white;
     }
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 10px @gray-l;
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+      -webkit-box-shadow: 0 0 10px @gray-l;
+              box-shadow: 0 0 10px @gray-l;
     }
   }
 }

@@ -2,11 +2,18 @@
 .burger__button {
   width: 0;/*width:6% in smal devicess*/
   height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: rgba(@red, 0.5);
   border-radius: 5px;
+  -webkit-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
   &:hover {
     cursor: pointer;
@@ -22,6 +29,7 @@
   width: 3rem;
   height: 3px;
   background-color: @gray;
+  -webkit-transition: background-color 0.5s linear;
   transition: background-color 0.5s linear;
   &.show {
     background-color: transparent;
@@ -37,8 +45,10 @@
     z-index: 1;
   }
   &.show::before {
-    transform: rotate(-45deg) translate3d(0, 10px, 0);
-    transform-origin: left top;
+    -webkit-transform: rotate(-45deg) translate3d(0, 10px, 0);
+            transform: rotate(-45deg) translate3d(0, 10px, 0);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
   }
   &::after {
     content: "";
@@ -51,7 +61,9 @@
     z-index: 1;
   }
   &.show::after {
-    transform: rotate(45deg) translate3d(0, -10px, 0);
-    transform-origin: left bottom;
+    -webkit-transform: rotate(45deg) translate3d(0, -10px, 0);
+            transform: rotate(45deg) translate3d(0, -10px, 0);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
   }
 }

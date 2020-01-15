@@ -3,8 +3,12 @@
   margin-top: 1rem;
 }
 .acardeon__item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   b {
     font-size: 1.1rem;
     font-family: @releway;
@@ -24,21 +28,26 @@
     height: 1rem;
     border-right: 2px solid @gray;
     border-bottom: 2px solid @gray;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   &--active {
     b {
       color: @blue;
+      -webkit-transition: all 0.4s linear;
       transition: all 0.4s linear;
     }
     h5 {
       color: @blue;
+      -webkit-transition: all 0.4s linear;
       transition: all 0.4s linear;
     }
     span {
       border-right-color: @blue;
       border-bottom-color: @blue;
-      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+              transform: rotate(-135deg);
+      -webkit-transition: all 0.4s linear;
       transition: all 0.4s linear;
     }
   }
