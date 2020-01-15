@@ -198,16 +198,16 @@ jQuery(document).ready(function() {
     autoplaySpeed: 2000,
     arrows: false
   });
-  /*$(".feedback__btn__left").on("click", function() {
-    var feedbackCurent = $(this)
-      .parent(".feedback__slider")
-      .find("#feedbackSlider");
-    feedbackCurent.slick("slickPrev");
+  $(".blog__bnt__left").on("click", function() {
+    var blogCurent = $(this)
+      .parent(".blog__content")
+      .find("#blogSlider");
+    blogCurent.slick("slickPrev");
   });
-  $(".feedback__btn__right").on("click", function() {
-    var feedbackCurent = $(this)
-      .parent(".feedback__slider")
-      .find("#feedbackSlider");
-    feedbackCurent.slick("slickNext");
-  });*/
+  $(".blog__bnt__right").on("click", function() {
+    var blogCurent = $(this)
+      .parent(".blog__content")
+      .find("#blogSlider");
+    blogCurent.slick("slickNext");
+  });
 });
