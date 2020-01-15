@@ -21,7 +21,7 @@
 }
 .blog__bnt__left {
   position: absolute;
-  left: 0;
+  left: -5%;
   top: 45%;
   width: 4rem;
   height: 4rem;
@@ -49,7 +49,7 @@
 }
 .blog__bnt__right {
   position: absolute;
-  right: 0;
+  right: -5%;
   top: 45%;
   width: 4rem;
   height: 4rem;
@@ -78,9 +78,13 @@
 .blog__slider {
   display: flex;
   justify-content: space-around;
+
+
+
+  
 }
 .blog__slider__card {
-  flex-basis: 32%;
+  flex-basis: 30%;
   background-color: @white;
   height: 650px;
   box-shadow: 0 0 5px @gray-l;
@@ -117,6 +121,12 @@
   height: 400px;
   position: relative;
   z-index: 1;
+  &--2{
+    background: url(../img/blog/card2.png) no-repeat center; 
+  }
+  &--3{
+    background: url(../img/blog/card3.png) no-repeat center; 
+  }
   div {
     position: absolute;
     top: 0;

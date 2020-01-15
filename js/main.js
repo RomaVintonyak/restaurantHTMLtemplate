@@ -181,4 +181,33 @@ jQuery(document).ready(function() {
       .find("#feedbackSlider");
     feedbackCurent.slick("slickNext");
   });
+  /*latest blog hover*/
+  var blogHover = $(".slider__blog__img");
+  blogHover.hover(function() {
+    $(this)
+      .parent(".blog__slider__card")
+      .find(".slider__blog__text")
+      .find("h4").toggleClass("blue__header");
+  });
+  /*slider to blog sevtion*/
+  const blogSlider = $("#blogSlider");
+  blogSlider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false
+  });
+  /*$(".feedback__btn__left").on("click", function() {
+    var feedbackCurent = $(this)
+      .parent(".feedback__slider")
+      .find("#feedbackSlider");
+    feedbackCurent.slick("slickPrev");
+  });
+  $(".feedback__btn__right").on("click", function() {
+    var feedbackCurent = $(this)
+      .parent(".feedback__slider")
+      .find("#feedbackSlider");
+    feedbackCurent.slick("slickNext");
+  });*/
 });
