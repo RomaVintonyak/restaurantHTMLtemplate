@@ -179,6 +179,6 @@ jQuery(document).ready(function() {
     var feedbackCurent = $(this)
       .parent(".feedback__slider")
       .find("#feedbackSlider");
-      feedbackCurent.slick("slickNext");
+    feedbackCurent.slick("slickNext");
   });
 });
