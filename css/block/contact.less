@@ -9,7 +9,73 @@
     color: @gray;
   }
 }
-.map__block{
-   margin-top: 4rem;
-   margin-bottom: 10rem; 
+.map__block {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+.contact__form {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__form__worktime {
+  flex-basis: 40%;
+  h5 {
+    font-size: 2.3rem;
+    font-family: @lobster;
+    color: @gray;
+  }
+}
+.week__day {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  h6 {
+    font-size: 1.4rem;
+    font-family: @releway;
+    color: @gray;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.3rem;
+    font-family: @releway;
+    color: @gray-l;
+    text-transform: uppercase;
+  }
+}
+.contact__form__feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  h5 {
+    font-size: 2.3rem;
+    font-family: @lobster;
+    color: @gray;
+  }
+  input {
+    height: 4rem;
+    border: 1px solid @gray-l;
+    padding-left: 1rem;
+    font-family: @releway;
+    font-size: 1.2rem;
+    &:focus {
+      outline-style: double;
+      outline-color: @red;
+    }
+  }
+  textarea {
+    resize: none;
+    height: 8rem;
+    border: 1px solid @gray-l;
+    padding-left: 1rem;
+    font-family: @releway;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    overflow: hidden;
+    &:focus {
+      outline-style: double;
+      outline-color: @red;
+    }
+  }
 }

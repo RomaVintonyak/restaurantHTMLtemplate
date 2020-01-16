@@ -1141,8 +1141,8 @@
       <div class="map__block">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.6627387520807!2d24.707610918799123!3d48.92181754825152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c1134dfa2d45%3A0x8c332bceffc38a45!2z0L_Qu9C-0YnQsCDQoNC40L3QvtC6LCDQhtCy0LDQvdC-LdCk0YDQsNC90LrRltCy0YHRjNC6LCDQhtCy0LDQvdC-LdCk0YDQsNC90LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc2MDAw!5e0!3m2!1suk!2sua!4v1579168743814!5m2!1suk!2sua"
-          width="1920"
-          height="900"
+          width="100%"
+          height="600px"
           frameborder="0"
           style="border:0;"
           allowfullscreen=""
@@ -1152,8 +1152,45 @@
       <!--contact form-->
       <div class="container">
         <div class="contact__form">
-          <div class="contact__form__colum"></div>
-          <div class="contact__form__colum"></div>
+          <div class="contact__form__worktime">
+            <h5>Open Hours</h5>
+            <img src="img/contact/ShapeWorkTime.png" alt="line">
+            <div class="week__day">
+              <h6>sunday:</h6>
+              <p><time>8:00 &mdash; 18:00</time></p>
+            </div>
+            <div class="week__day">
+              <h6>monday:</h6>
+              <p><time>12:00 &mdash; 23:00</time></p>
+            </div>
+            <div class="week__day">
+              <h6>tuesday:</h6>
+              <p><time>10:00 &mdash; 23:00</time></p>
+            </div>
+            <div class="week__day">
+              <h6>wensday:</h6>
+              <p><time>10:00 &mdash; 23:00</time></p>
+            </div>
+            <div class="week__day">
+              <h6>thusday:</h6>
+              <p><time>10:00 &mdash; 23:00</time></p>
+            </div>
+            <div class="week__day">
+              <h6>friday</h6>
+              <p><time>10:00 &mdash; 23:00</time></p>
+            </div>
+            <div class="week__day">
+              <h6>suturday:</h6>
+              <p><time>8:00 &mdash; 24:00</time></p>
+            </div>
+          </div>
+          <div class="contact__form__feedback">
+            <h5>Send Message</h5>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+            <textarea placeholder="Message"></textarea>
+            <a href="#" class="btn">Send</a>
+          </div>
         </div>
       </div>
     </section>
@@ -1171,7 +1208,7 @@
         boxClass: "wow",
         animateClass: "animated",
         offset: 0,
-        mobile: false,
+        mobile: true,
         live: true
       });
       new WOW().init();
