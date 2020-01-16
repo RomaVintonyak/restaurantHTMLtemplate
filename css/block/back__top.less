@@ -1,0 +1,44 @@
+//main: ../style.less
+.back__top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 3;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: rgba(@red, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: background-color 0.4s linear,
+    -webkit-box-shadow 0.4s linear;
+  transition: background-color 0.4s linear, -webkit-box-shadow 0.4s linear;
+  transition: box-shadow 0.4s linear, background-color 0.4s linear;
+  transition: box-shadow 0.4s linear, background-color 0.4s linear,
+    -webkit-box-shadow 0.4s linear;
+  &:hover {
+    cursor: pointer;
+    background-color: @red;
+    -webkit-box-shadow: 2px 1px 5px @red;
+    box-shadow: 2px 1px 5px @red;
+    &:active {
+      background-color: rgba(@red, 0.5);
+    }
+  }
+}
+.back__top__button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-top: 2px solid @white;
+  border-right: 2px solid @white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 0.8rem;
+}

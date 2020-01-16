@@ -156,6 +156,8 @@ jQuery(document).ready(function() {
   var aHref = $("a");
   aHref.click(function(event) {
     event.preventDefault();
+    event.stopPropagation();
+    /*return false;*/
   }); //!!!!!!!!!!!remove this script to active all links!!!!!!!!!!
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -210,4 +212,13 @@ jQuery(document).ready(function() {
       .find("#blogSlider");
     blogCurent.slick("slickNext");
   });
+  /*bad script*/
+  $("#iputText").keyup(function(){
+    var val = $(this).val();
+    $("#showText").text(val);
+  });
+  /********************************/
+  /*back to top script*/
+  var scrollBtn = $("#toggleTop");
+  /*scrollBtn.hide(200);*/
 });

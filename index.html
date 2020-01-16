@@ -1186,8 +1186,21 @@
           </div>
           <div class="contact__form__feedback">
             <h5>Send Message</h5>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Email Address" required />
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="user"
+              id="iputText"
+              required
+            />
+
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
+            <span id="showText"></span>
             <textarea
               placeholder="Message"
               maxlength="256"
@@ -1200,6 +1213,19 @@
       </div>
     </section>
     <!--/.section Contact-->
+    <!--footer section-->
+    <footer id="footer">
+      <div class="footer__img">
+        <div class="footer__overlay">
+          <div class="container">
+            <div class="footer__content"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/.footer-->
+    <!--back to top button-->
+    <div class="back__top wavesEfect" id="toggleTop"><span class="back__top__button"></span></div>
     <!-- jQuery -->
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
     <!--slick slider https://kenwheeler.github.io/slick/-->
