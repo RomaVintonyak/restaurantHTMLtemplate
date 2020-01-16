@@ -213,12 +213,6 @@ jQuery(document).ready(function() {
       .find("#blogSlider");
     blogCurent.slick("slickNext");
   });
-  /*bad script*/
-  $("#iputText").keyup(function() {
-    var val = $(this).val();
-    $("#showText").text(val);
-  });
-  /********************************/
   /*back to top script*/
   var scrollBtn = $("#toggleTop");
   scrollBtn.hide(600);
