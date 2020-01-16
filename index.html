@@ -147,7 +147,7 @@
     <section id="wellcome">
       <div class="container">
         <div class="wellcome__block">
-          <div class="wellcome__left">
+          <div class="wellcome__left wow bounceInLeft">
             <div class="wellcome__title">
               <h2>Welcome</h2>
               <h3>To Our Resturant</h3>
@@ -169,12 +169,12 @@
                 generator on the Internet.
               </p>
             </div>
-            <div class="wellcome__author text__center">
+            <div class="wellcome__author text__center wow bounceInUp">
               <p>Matthew T. Sloan</p>
               <p>Founder & Owner</p>
             </div>
           </div>
-          <div class="welcome__rigth">
+          <div class="welcome__rigth wow bounceInRight">
             <div class="right__header">
               <img src="img/about/header_snape.png" alt="logo" />
               <h4>Book Table</h4>
@@ -187,7 +187,7 @@
               <input type="text" placeholder="Time 12:00" />
               <input type="text" placeholder="Table No" />
             </div>
-            <div class="right__button">
+            <div class="right__button wow fadeInRightBig">
               <button type="submit" class="right__btn wavesEfect">
                 Book Noow.
               </button>
@@ -202,7 +202,7 @@
     <!--feature item section-->
     <section id="features" class="features__item">
       <!--section title-->
-      <div class="header__titles mt-6">
+      <div class="header__titles mt-6 wow fadeInUp">
         <div class="container">
           <div class="header__titles__content text__center">
             <h3>Our Restarent Provide Feature Item</h3>
@@ -214,7 +214,7 @@
       <!--/.section title-->
       <!--features slider-->
       <div class="container">
-        <div class="features__block">
+        <div class="features__block wow fadeInDown">
           <div class="features__btn__left">
             <i class="fas fa-arrow-left"></i>
           </div>
@@ -262,12 +262,12 @@
     <div class="container">
       <div class="about__content">
         <div class="collum__text">
-          <div class="collum__text__header text__left">
+          <div class="collum__text__header text__left wow slideInLeft">
             <h3>We Provide Best Services</h3>
             <h2>About Us</h2>
             <img src="img/about_us/snape.png" alt="snape" class="img" />
           </div>
-          <div class="collum__text__content text__left">
+          <div class="collum__text__content text__left wow slideInLeft">
             <p>
               Injected humour, or randomised words which don't look evethe
               Internet tend to repeat predefined chunks as necessary, making
@@ -279,7 +279,7 @@
               Internet tend to repeat predefined chunks as you
             </p>
           </div>
-          <div class="collum__text__acardeon">
+          <div class="collum__text__acardeon wow slideInUp">
             <div class="acardeon__item">
               <div class="acardeon__item__header" data-acardeon="show-text">
                 <b>1.</b>
@@ -346,7 +346,7 @@
             </div>
           </div>
         </div>
-        <div class="colum__photo">
+        <div class="colum__photo wow zoomOutUp">
           <img src="img/about_us/R_bg.png" alt="master__cook" class="img" />
         </div>
       </div>
@@ -1154,7 +1154,7 @@
         <div class="contact__form">
           <div class="contact__form__worktime">
             <h5>Open Hours</h5>
-            <img src="img/contact/ShapeWorkTime.png" alt="line">
+            <img src="img/contact/ShapeWorkTime.png" alt="line" />
             <div class="week__day">
               <h6>sunday:</h6>
               <p><time>8:00 &mdash; 18:00</time></p>
@@ -1186,10 +1186,15 @@
           </div>
           <div class="contact__form__feedback">
             <h5>Send Message</h5>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Email Address">
-            <textarea placeholder="Message"></textarea>
-            <a href="#" class="btn">Send</a>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea
+              placeholder="Message"
+              maxlength="256"
+              wrap="hard"
+              required
+            ></textarea>
+            <a href="#" class="btn wavesEfect">Send</a>
           </div>
         </div>
       </div>
