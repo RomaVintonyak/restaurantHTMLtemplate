@@ -232,4 +232,31 @@ jQuery(document).ready(function() {
       1000
     );
   });
+  /*smoth scroll to category*/
+  $("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+    var blockID = $(this).data("scroll");
+    /*var blockofSet = $(blockID).offset().top;*/
+    console.log(blockID);
+    /* $("html, body").animate(
+      {
+        scrollTop: blockofSet - 70
+      },
+      900
+    );*/
+  });
+
+  /*$("#togleMenu").removeClass("nav__menu--show");
+    $(".burger__icon").removeClass("show");*/
+  /*$("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+    var blokId = $(this).data("scroll");
+    var blockOfset = $(blokId).offset().top;
+    $("html, body").animate(
+      {
+        scrollTop: blockOfset -70
+      },
+      1500
+    );
+  });*/
 });
