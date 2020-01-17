@@ -21,7 +21,7 @@
   background-color: rgba(@red-l, 0.8);
 }
 .footer__content {
- margin-top: 4rem;
+  margin-top: 4rem;
 }
 .footer__content__colum {
   display: flex;
@@ -120,31 +120,69 @@
     }
   }
 }
-.footer__content__row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer__content__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.row__social{
-    margin-top: 1.5rem;
-    width: 30%;
+.row__social {
+  margin-top: 1.5rem;
+  width: 25%;
+  display: flex;
+  a {
+    text-decoration: none;
+    background-color: @gray-l;
     display: flex;
-    a{
-        text-decoration: none;
-        background-color: @gray-l;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 3rem;
-        height: 3rem;
-        margin: 0 0.5rem;
-        border-radius: 10px;
-        i{
-            color: @white;
-            font-size: 1.5rem;
-        }
-        &:hover{
-            
-        }
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    transition: box-shadow 0.4s linear, transform 0.4s linear;
+    i {
+      color: @white;
+      font-size: 1.5rem;
+    }
+    &:hover {
+      box-shadow: 1px 1px @blue, 2px 2px @blue, 3px 3px @blue, 4px 4px @blue,
+        5px 5px @blue, 6px 6px @blue, 7px 7px @blue;
+      -webkit-transform: translateX(-7px);
+      transform: translateX(-7px);
+    }
+  }
+}
+.copy__right {
+  flex-basis: 25%;
+  margin-top: 1.5rem;
+  p {
+    color: @gray;
+    font-family: @releway;
+    font-size: 1.1rem;
+  }
+}
+.row__menu {
+  margin-top: 1.5rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  h5 {
+    font-size: 1rem;
+    font-family: @lobster;
+    color: @blue;
+    text-transform: uppercase;
+  }
+}
+.footer__link {
+    text-decoration: none;
+    color: @gray;
+    text-transform: uppercase;
+    font-family: @releway;
+    font-size: 1rem;
+    margin-left: 0.8rem;
+    transition: color 0.2s linear;
+    &:hover{
+        color: @blue;
     }
 }
