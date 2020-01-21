@@ -4,10 +4,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  @media @tablet {
+    margin: 5rem 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
 .wellcome__left {
   width: 70%;
   margin-right: 2rem;
+  @media @tablet {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
 }
 .wellcome__title {
   h2 {
@@ -48,6 +58,9 @@
       margin-bottom: 0;
     }
   }
+  @media @tablet {
+    padding-right: 0;
+  }
 }
 .wellcome__author {
   margin-top: 3.3rem;
@@ -62,6 +75,9 @@
       font-size: 1.5rem;
     }
   }
+  @media @tablet {
+    width: 100%;
+  }
 }
 .welcome__rigth {
   width: 30%;
@@ -71,14 +87,18 @@
   top: 0;
   left: 0;
   z-index: 2;
+  @media @tablet {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .right__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 4rem;
   margin-bottom: 3rem;
   h4 {
@@ -97,8 +117,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   padding: 0 1rem;
   input {
@@ -128,15 +148,24 @@
   font-weight: 700;
   color: @white;
   background: #14bcdd;
-  background: -webkit-gradient(linear, left top, right top, from(#14bcdd), to(#4cffff));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#14bcdd),
+    to(#4cffff)
+  );
   background: linear-gradient(to right, #14bcdd, #4cffff);
   &:focus {
     outline: none;
   }
 }
-.right__img{
+.right__img {
   position: absolute;
   bottom: -13rem;
   left: 0rem;
   z-index: 1;
+  @media @tablet {
+    display: none;
+  }
 }
