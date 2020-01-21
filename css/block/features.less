@@ -5,6 +5,15 @@
   position: relative;
   margin-bottom: 10rem;
   z-index: 1;
+  @media @tablet{
+    margin-bottom: 6rem;
+  }
+  @media @mobile{
+    margin-bottom: 4rem;
+  }
+  @media @mobile-sm{
+    margin-bottom: 0.1rem;
+  }
 }
 .features__btn__left {
   position: absolute;
@@ -14,35 +23,65 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#14bcdd), to(#4cffff));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#14bcdd),
+    to(#4cffff)
+  );
   background: linear-gradient(to right, #14bcdd, #4cffff);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
-  transition: background 0.1s linear, box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: background 0.1s linear, box-shadow 0.1s linear,
+    -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
+    @media @mobile {
+      font-size: 1rem;
+    }
   }
   &:hover {
     cursor: pointer;
-    background: -webkit-gradient(linear, right top, left top, from(#14bcdd), to(#4cffff));
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#14bcdd),
+      to(#4cffff)
+    );
     background: linear-gradient(to left, #14bcdd, #4cffff);
     -webkit-box-shadow: 0px 0px 30px #4cffff;
-            box-shadow: 0px 0px 30px #4cffff;
+    box-shadow: 0px 0px 30px #4cffff;
     &:active {
-      background: -webkit-gradient(linear, left bottom, left top, from(#14bcdd), to(#4cffff));
+      background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(#14bcdd),
+        to(#4cffff)
+      );
       background: linear-gradient(to top, #14bcdd, #4cffff);
     }
+  }
+  @media @mobile {
+    width: 2rem;
+    height: 2rem;
+    top: 20%;
+  }
+  @media @mobile-sm {
+    top: 10%;
   }
 }
 .features__btn__right {
@@ -53,35 +92,65 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#14bcdd), to(#4cffff));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#14bcdd),
+    to(#4cffff)
+  );
   background: linear-gradient(to right, #14bcdd, #4cffff);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
-  transition: background 0.1s linear, box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: background 0.1s linear, box-shadow 0.1s linear,
+    -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
+    @media @mobile {
+      font-size: 1rem;
+    }
   }
   &:hover {
     cursor: pointer;
-    background: -webkit-gradient(linear, right top, left top, from(#14bcdd), to(#4cffff));
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#14bcdd),
+      to(#4cffff)
+    );
     background: linear-gradient(to left, #14bcdd, #4cffff);
     -webkit-box-shadow: 0px 0px 30px #4cffff;
-            box-shadow: 0px 0px 30px #4cffff;
+    box-shadow: 0px 0px 30px #4cffff;
     &:active {
-      background: -webkit-gradient(linear, left top, left bottom, from(#14bcdd), to(#4cffff));
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#14bcdd),
+        to(#4cffff)
+      );
       background: linear-gradient(to bottom, #14bcdd, #4cffff);
     }
+  }
+  @media @mobile {
+    width: 2rem;
+    height: 2rem;
+    top: 20%;
+  }
+  @media @mobile-sm {
+    top: 10%;
   }
 }
 .slider__item {
@@ -92,6 +161,10 @@
     font-family: @lobster;
     color: @gray;
     font-weight: 400;
+    @media @mobile {
+      margin-top: 0.5em;
+      font-size: 1rem;
+    }
   }
   p {
     font-size: 1.5rem;
@@ -99,6 +172,9 @@
     color: @gray;
     small {
       text-decoration: line-through;
+    }
+    @media @mobile {
+      font-size: 0.8rem;
     }
   }
 }
