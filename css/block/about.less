@@ -6,6 +6,13 @@
 }
 .collum__text {
   width: 60%;
+  @media @tablet{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  @media @mobile-sm{
+    margin-top: -10rem;
+  }
 }
 .collum__text__header {
   width: 60%;
@@ -14,15 +21,24 @@
     font-family: @sacramento;
     color: @red;
     line-height: 1.5;
+    @media @mobile-sm{
+      font-size: 1.4rem;
+    }
   }
   h2 {
     font-size: 2rem;
     font-family: @lobster;
     color: @gray;
+    @media @mobile-sm{
+      font-size: 1rem;
+    }
   }
   img {
     margin-top: -0.7rem;
     width: 60%;
+  }
+  @media @tablet{
+    width: 100%;
   }
 }
 .collum__text__content {
@@ -37,4 +53,7 @@
 .colum__photo{
   width: 40%;
   margin-left: 3rem;
+  @media @tablet{
+    display: none;
+  }
 }
