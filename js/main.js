@@ -149,19 +149,6 @@ jQuery(document).ready(function() {
       .find("#sliderStuff");
     currentSlider.slick("slickNext");
   });
-  /*reset tags a standard behavior*/
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  var aHref = $("a");
-  aHref.click(function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    /*return false;*/
-  }); //!!!!!!!!!!!remove this script to active all links!!!!!!!!!!
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   /*slider to section feedback*/
   const feedbackSlider = $("#feedbackSlider");
   feedbackSlider.slick({
@@ -236,27 +223,20 @@ jQuery(document).ready(function() {
   $("[data-scroll]").on("click", function(event) {
     event.preventDefault();
     var blockID = $(this).data("scroll");
-    /*var blockofSet = $(blockID).offset().top;*/
-    console.log(blockID);
-    /* $("html, body").animate(
+    var blockofSet = $(blockID).offset();
+    console.log(blockofSet);
+    /*$("#togleMenu").removeClass("nav__menu--show");
+    $(".burger__icon").removeClass("show");*/
+    $("html, body").animate(
       {
         scrollTop: blockofSet - 70
       },
       900
-    );*/
-  });
-
-  /*$("#togleMenu").removeClass("nav__menu--show");
-    $(".burger__icon").removeClass("show");*/
-  /*$("[data-scroll]").on("click", function(event) {
-    event.preventDefault();
-    var blokId = $(this).data("scroll");
-    var blockOfset = $(blokId).offset().top;
-    $("html, body").animate(
-      {
-        scrollTop: blockOfset -70
-      },
-      1500
     );
-  });*/
+  });
+  /*shom mobile menu*/
+  $("#navToggle").on("click", function(event){
+    event.preventDefault();
+    $(".nav__list--mobile").toggleClass("nav__list--mobile--show__menu");
+  });
 });

@@ -81,7 +81,7 @@
         <div class="nav__brand">
           <img src="img/header/logo.png" alt="logo" />
         </div>
-        <ol class="nav__list">
+        <ol class="nav__list nav__list--show__nav">
           <li class="nav__item">
             <a href="#" class="nav__link" data-scroll="header">home</a>
           </li>
@@ -101,7 +101,9 @@
             <a href="#" class="nav__link" data-scroll="blogSection">blog</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link" data-scroll="feedback__section">shops</a>
+            <a href="#" class="nav__link" data-scroll="feedbackSection"
+              >shops</a
+            >
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link" data-scroll="footer">contact</a>
@@ -114,6 +116,34 @@
           <span class="burger__icon"></span>
         </div>
       </nav>
+      <!--mobile menu-->
+      <ol class="nav__list--mobile">
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="header">home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="wellcome">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="shedule">page</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="mainMenu">menu</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="ourStuf">gallery</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="blogSection">blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="feedbackSection">shops</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-scroll="footer">contact</a>
+        </li>
+      </ol>
+      <!--/. mobile menu-->
     </header>
     <!--intro slider section-->
     <section id="intro">
@@ -868,7 +898,7 @@
     </div>
     <!--/.event__block-->
     <!--section feedback-->
-    <section id="feedback__section">
+    <section id="feedbackSection">
       <div class="feedback">
         <!--section title-->
         <div class="header__titles mt-5 wow fadeInLeft" data-wow-duration="3s">
@@ -1355,20 +1385,13 @@
                 <div class="row__menu">
                   <h5>user link:</h5>
                   <a href="#" class="footer__link" data-scroll="header">home</a>
-                  <a href="#" class="footer__link">about</a
-                  >
-                  <a href="#" class="footer__link">page</a
-                  >
-                  <a href="#" class="footer__link">menu</a
-                  >
-                  <a href="#" class="footer__link">gallery</a
-                  >
-                  <a href="#" class="footer__link">blog</a
-                  >
-                  <a href="#" class="footer__link">shops</a
-                  >
-                  <a href="#" class="footer__link">contact</a
-                  >
+                  <a href="#" class="footer__link">about</a>
+                  <a href="#" class="footer__link">page</a>
+                  <a href="#" class="footer__link">menu</a>
+                  <a href="#" class="footer__link">gallery</a>
+                  <a href="#" class="footer__link">blog</a>
+                  <a href="#" class="footer__link">shops</a>
+                  <a href="#" class="footer__link">contact</a>
                 </div>
               </div>
             </div>
@@ -1382,7 +1405,7 @@
       <span class="back__top__button"></span>
     </div>
     <!-- jQuery -->
-    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
     <!--slick slider https://kenwheeler.github.io/slick/-->
     <script type="text/javascript" src="js/vendor/slick.min.js"></script>
     <!--waves efect http://fian.my.id/Waves/#start-->

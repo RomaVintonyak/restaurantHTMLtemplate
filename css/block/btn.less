@@ -24,6 +24,10 @@
     -webkit-box-shadow 0.2s linear;
   transition: background-color 0.2s linear, border 0.2s linear,
     -webkit-box-shadow 0.2s linear;
+  -webkit-transition: background-color 0.2s linear, border 0.2s linear,
+    -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border 0.2s linear,
+    -webkit-box-shadow 0.2s linear;
   transition: background-color 0.2s linear, box-shadow 0.2s linear,
     border 0.2s linear;
   transition: background-color 0.2s linear, box-shadow 0.2s linear,
@@ -31,6 +35,13 @@
   &--sm {
     height: 2rem;
     width: 8rem;
+    @media @tablet {
+      padding: 0.5rem 5rem;
+      height: 4rem;
+    }
+    @media @notebook {
+      padding: 0.5rem 4rem;
+    }
   }
   &:hover {
     cursor: pointer;

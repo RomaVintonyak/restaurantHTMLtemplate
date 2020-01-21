@@ -1,16 +1,16 @@
 //main: ../style.less
 .burger__button {
-  width: 0;/*width:6% in smal devicess*/
+  width: 0;
   height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: rgba(@red, 0.5);
   border-radius: 5px;
   -webkit-transition: background-color 0.4s linear;
@@ -21,6 +21,12 @@
     &:active {
       background-color: rgba(@red, 0.9);
     }
+  }
+  @media @tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15%;
   }
 }
 .burger__icon {
@@ -46,9 +52,9 @@
   }
   &.show::before {
     -webkit-transform: rotate(-45deg) translate3d(0, 10px, 0);
-            transform: rotate(-45deg) translate3d(0, 10px, 0);
+    transform: rotate(-45deg) translate3d(0, 10px, 0);
     -webkit-transform-origin: left top;
-            transform-origin: left top;
+    transform-origin: left top;
   }
   &::after {
     content: "";
@@ -62,8 +68,8 @@
   }
   &.show::after {
     -webkit-transform: rotate(45deg) translate3d(0, -10px, 0);
-            transform: rotate(45deg) translate3d(0, -10px, 0);
+    transform: rotate(45deg) translate3d(0, -10px, 0);
     -webkit-transform-origin: left bottom;
-            transform-origin: left bottom;
+    transform-origin: left bottom;
   }
 }
