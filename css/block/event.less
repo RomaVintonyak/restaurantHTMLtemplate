@@ -6,18 +6,17 @@
   background-color: @white;
   position: relative;
   z-index: 1;
-  -webkit-box-shadow: 0 0 20px @gray-l;
   box-shadow: 0 0 20px @gray-l;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   overflow: hidden;
+  @media @mobile {
+    display: none;
+  }
 }
 .content__line__event {
   position: absolute;
@@ -65,13 +64,10 @@
 }
 .event__footer {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
 }
 .event__footer__item {
@@ -95,7 +91,6 @@
 .sp__img {
   margin-top: 1.5rem;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   img {
     margin-right: 2rem;
