@@ -1,6 +1,15 @@
 //main: ../style.less
 .subscribe__section {
   margin-top: 10rem;
+  @media @tablet{
+    margin-top: 7rem;
+  }
+  @media @mobile{
+    margin-top: 4rem;
+  }
+  @media @mobile-sm{
+    margin-top: 2rem;
+  }
 }
 .subscribe__img {
   width: 100%;
@@ -20,6 +29,9 @@
   display: flex;
   width: 100%;
   height: 590px;
+  @media @mobile{
+    flex-wrap: wrap;
+  }
 }
 .subscribe__colum {
   -ms-flex-preferred-size: 50%;
@@ -106,5 +118,12 @@
         line-height: 53px;
       }
     }
+    @media @mobile{
+      margin-left: 0;
+      margin-top: -15rem;
+    }
+  }
+  @media @mobile{
+    flex-basis: 100%;
   }
 }
