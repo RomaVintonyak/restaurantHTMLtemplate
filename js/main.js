@@ -223,10 +223,10 @@ jQuery(document).ready(function() {
   $("[data-scroll]").on("click", function(event) {
     event.preventDefault();
     var blockID = $(this).data("scroll");
-    var blockofSet = $(blockID).offset();
+    var blockofSet = $(blockID).offset().top;
     console.log(blockofSet);
-    /*$("#togleMenu").removeClass("nav__menu--show");
-    $(".burger__icon").removeClass("show");*/
+    $(".nav__list--mobile").removeClass("nav__list--mobile--show__menu");
+    $(".burger__icon").removeClass("show");
     $("html, body").animate(
       {
         scrollTop: blockofSet - 70
