@@ -1,6 +1,12 @@
 //main: ../style.less
 #contactMap {
   margin-top: 10rem;
+  @media @mobile {
+    margin-top: 7rem;
+  }
+  @media @mobile-sm {
+    margin-top: 2rem;
+  }
 }
 .map__header {
   h3 {
@@ -13,30 +19,46 @@
   margin-top: 4rem;
   margin-bottom: 10rem;
   width: 100%;
+  @media @tablet {
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+  }
+  @media @mobile {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 .contact__form {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
+  @media @mobile {
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 .contact__form__worktime {
-  -ms-flex-preferred-size: 40%;
   flex-basis: 40%;
   h5 {
     font-size: 2.3rem;
     font-family: @lobster;
     color: @gray;
   }
+  @media @mobile {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
 }
 .week__day {
   margin-top: 3rem;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   h6 {
     font-size: 1.4rem;
@@ -50,17 +72,17 @@
     color: @gray-l;
     text-transform: uppercase;
   }
+  @media @mobile {
+    margin-top: 1rem;
+  }
 }
 .contact__form__feedback {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 50%;
   h5 {
@@ -78,6 +100,9 @@
       outline-style: double;
       outline-color: @red;
     }
+    @media @mobile {
+      margin-bottom: 1rem;
+    }
   }
   textarea {
     resize: none;
@@ -92,5 +117,11 @@
       outline-style: double;
       outline-color: @red;
     }
+    @media @mobile {
+      margin-bottom: 1rem;
+    }
+  }
+  @media @mobile {
+    width: 100%;
   }
 }
