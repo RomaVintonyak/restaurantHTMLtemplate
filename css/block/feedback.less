@@ -4,13 +4,10 @@
   height: 900px;
   background-color: @red-l;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .feedback__slider {
@@ -36,19 +33,14 @@
   );
   background: linear-gradient(to right, #14bcdd, #4cffff);
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
-  transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
+  -webkit-transition: background 0.1s linear, box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
-  transition: background 0.1s linear, box-shadow 0.1s linear,
-    -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
@@ -63,7 +55,6 @@
       to(#4cffff)
     );
     background: linear-gradient(to left, #14bcdd, #4cffff);
-    -webkit-box-shadow: 0px 0px 30px #4cffff;
     box-shadow: 0px 0px 30px #4cffff;
     &:active {
       background: -webkit-gradient(
@@ -94,19 +85,14 @@
   );
   background: linear-gradient(to right, #14bcdd, #4cffff);
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
-  transition: background 0.1s linear, -webkit-box-shadow 0.1s linear;
+  -webkit-transition: background 0.1s linear, box-shadow 0.1s linear;
   transition: background 0.1s linear, box-shadow 0.1s linear;
-  transition: background 0.1s linear, box-shadow 0.1s linear,
-    -webkit-box-shadow 0.1s linear;
   i {
     color: @white;
     font-size: 1.5rem;
@@ -121,7 +107,6 @@
       to(#4cffff)
     );
     background: linear-gradient(to left, #14bcdd, #4cffff);
-    -webkit-box-shadow: 0px 0px 30px #4cffff;
     box-shadow: 0px 0px 30px #4cffff;
     &:active {
       background: -webkit-gradient(
@@ -140,20 +125,20 @@
 }
 .slider__content {
   display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 500px;
   width: 100%;
   overflow: hidden;
 }
 .colum__photo__feedback {
-  -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
   position: relative;
   z-index: 3;
+  @media @tablet {
+    display: none;
+  }
 }
 .line__after__photo {
   position: absolute;
@@ -164,23 +149,25 @@
     font-size: 2rem;
     color: @red;
   }
+  @media @tablet {
+    display: none;
+  }
 }
 .collum__text__feedback {
-  -ms-flex-preferred-size: 68%;
   flex-basis: 68%;
   background-color: @white;
   z-index: 3;
   border: 3px solid rgba(@red, 0.15);
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
   justify-content: space-around;
+  @media @tablet {
+    flex-basis: 100%;
+  }
 }
 .top__text {
   height: 1rem;
@@ -197,17 +184,20 @@
     font-family: @releway;
     color: @gray-l;
     line-height: 2;
+    @media @mobile-sm {
+      font-size: 0.8rem;
+    }
+  }
+  @media @mobile-sm {
+    padding: 0 0.5rem;
   }
 }
 .text__rating {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   p {
     font-weight: 700;
