@@ -9,28 +9,28 @@
   border-radius: 10px;
   background-color: rgba(@red, 0.8);
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: background-color 0.4s linear,
     -webkit-box-shadow 0.4s linear;
-  transition: background-color 0.4s linear, -webkit-box-shadow 0.4s linear;
+  -webkit-transition: box-shadow 0.4s linear, background-color 0.4s linear;
   transition: box-shadow 0.4s linear, background-color 0.4s linear;
-  transition: box-shadow 0.4s linear, background-color 0.4s linear,
-    -webkit-box-shadow 0.4s linear;
   &:hover {
     cursor: pointer;
     background-color: @red;
-    -webkit-box-shadow: 2px 1px 5px @red;
     box-shadow: 2px 1px 5px @red;
     &:active {
       background-color: rgba(@red, 0.5);
     }
+  }
+  @media @mobile {
+    width: 2rem;
+    height: 2rem;
+    bottom: 1%;
+    right: 1%;
   }
 }
 .back__top__button {
@@ -41,4 +41,9 @@
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin-top: 0.8rem;
+  @media @mobile {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.4rem;
+  }
 }

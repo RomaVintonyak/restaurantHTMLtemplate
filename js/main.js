@@ -227,10 +227,9 @@ jQuery(document).ready(function() {
     $(".burger__icon").removeClass("show");
     var id  = $(this).attr('href'),
         offsetTop = $(id).offset().top;
-
   $("html, body").animate({
       scrollTop: offsetTop -70
-    }, 800);
+    }, 1000);
   });
   /*shom mobile menu*/
   $("#navToggle").on("click", function(event){
