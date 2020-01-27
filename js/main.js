@@ -220,25 +220,16 @@ jQuery(document).ready(function() {
     );
   });
   /*smoth scroll to category*/
-  /*$("[data-scroll]").on("click", function(event) {
-    event.preventDefault();
-    var blockID = $(this).data("scroll");
-    var blockofSet = $(blockID).offset().top;
-    console.log(blockofSet);
-    $(".nav__list--mobile").removeClass("nav__list--mobile--show__menu");
-    $(".burger__icon").removeClass("show");
-    $("html, body").animate(
-      {
-        scrollTop: blockofSet - 70
-      },
-      900
-    );
-  });*/
   var btnScrollCat = $(".scrollCat");
   btnScrollCat.on("click", function(event){
     event.preventDefault();
-    $("html, body").animate({
-      scroll
+    $(".nav__list--mobile").removeClass("nav__list--mobile--show__menu");
+    $(".burger__icon").removeClass("show");
+    var id  = $(this).attr('href'),
+        offsetTop = $(id).offset().top;
+
+  $("html, body").animate({
+      scrollTop: offsetTop -70
     }, 800);
   });
   /*shom mobile menu*/
