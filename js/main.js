@@ -220,7 +220,7 @@ jQuery(document).ready(function() {
     );
   });
   /*smoth scroll to category*/
-  $("[data-scroll]").on("click", function(event) {
+  /*$("[data-scroll]").on("click", function(event) {
     event.preventDefault();
     var blockID = $(this).data("scroll");
     var blockofSet = $(blockID).offset().top;
@@ -233,6 +233,13 @@ jQuery(document).ready(function() {
       },
       900
     );
+  });*/
+  var btnScrollCat = $(".scrollCat");
+  btnScrollCat.on("click", function(event){
+    event.preventDefault();
+    $("html, body").animate({
+      scroll
+    }, 800);
   });
   /*shom mobile menu*/
   $("#navToggle").on("click", function(event){
